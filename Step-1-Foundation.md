@@ -271,3 +271,4 @@ void f(double speed)
 }
 ```
 In general, static_assert(A,S) prints S as a compiler error message if A is not true.
+
