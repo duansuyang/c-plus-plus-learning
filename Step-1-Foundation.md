@@ -15,6 +15,19 @@ const
 constexpr   
 // "to be evaluated at compile time" 主要用于指定常量、将数据放置在内存中不易损坏的位置以及提高性能。
 
+```c++
+constexpr int max = 100;
+
+void use(int n)
+{
+    constexpr int c1 = max + 7;     // 正确，可以执行
+    constexpr int c2 = n + 7;       // 错误，n 未知
+    const int c3 = n + 8;           // 正确，c3 不可改变
+}
+```
+
+
+
 for (auto x : v) // for each x in v
 // 另一种 for 循环
 
